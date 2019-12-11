@@ -8,14 +8,14 @@
 					<v-divider class="mb-5" />
                     <v-form ref="form">
 					<div class="text-right">
-                        <v-text-field label="Agency Name" clearable shaped outlined></v-text-field>
-                        <v-text-field label="Agency Type" clearable shaped outlined></v-text-field>
-                        <v-text-field label="Agency Number" clearable shaped outlined></v-text-field>
-                        <v-text-field label="Agency Address" clearable shaped outlined></v-text-field>
-                        <v-btn outlined fab color="green">
+                        <v-text-field v-model="agencyName" label="Agency Name" clearable shaped outlined></v-text-field>
+                        <v-text-field v-model="agencyType" label="Agency Type" clearable shaped outlined></v-text-field>
+                        <v-text-field v-model="agencyNumber" label="Agency Number" clearable shaped outlined></v-text-field>
+                        <v-text-field v-model="agencyAddress" label="Agency Address" clearable shaped outlined></v-text-field>
+                        <v-btn @click="addAgency" outlined fab color="green">
                         <v-icon>mdi-plus</v-icon>
                         </v-btn>
-                        <v-btn outlined fab color="error" @click="reset">
+                        <v-btn outlined fab class="mr-4" color="error" @click="reset">
                         <v-icon>mdi-cancel</v-icon>
                         </v-btn>
 					</div>
@@ -32,7 +32,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="item in Agency" :key="item.agencyName">
+                                <tr v-for="item in agencies" :key="item.agencyName">
                                     <td>{{ item.agencyName }}</td>
                                     <td>{{ item.agencyType }}</td>
                                     <td>{{ item.agencyNumber }}</td>
@@ -51,10 +51,37 @@
 
 <script>
 export default {
-    reset () {
+    data(){
+        return{
+            drawer: false,
+            agencyName: '',
+            agencyType: '',
+            agencyNumber: '',
+            agencyAddress: '',
+            agencies: [
+                {
+                    agencyName: "Test",
+                    agencyType: "Test",
+                    agencyNumber: "Test",
+                    agencyAddress: "Test",
+                }
+            ]
+        }
+    },
+    methods: {
+        addAgency() {
+            this.agencies.push({
+                agencyName: this.agencyName,
+                agencyType: this.agencyType,
+                agencyNumber: this.agencyNumber,
+                agencyAddress: this.agencyAddress
+            })
+        },
+        reset () {
         this.$refs.form.reset()
       }
-}
+    }
+    }
 </script>
 
 <style scoped>

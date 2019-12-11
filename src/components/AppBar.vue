@@ -78,7 +78,7 @@
 						icon: 'mdi-account-outline'
 					},
 					{
-						name: 'Samsung 321',
+						name: 'Daun Sayson',
 						address: {name: 'daun-view'},
 						icon: 'mdi-alarm-light'
 					},
