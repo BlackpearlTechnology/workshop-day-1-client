@@ -73,9 +73,9 @@
 						icon: 'mdi-google-maps'
 					},
 					{
-						name: 'Google Play',
-						address: 'https://play.google.com',
-						icon: 'mdi-google-play'
+						name: 'Si ✌',
+						address: 'https://www.facebook.com/srapdv',
+						icon: 'mdi-account-outline'
 					},
 					{
 						name: 'Chrome',
