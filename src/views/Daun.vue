@@ -4,17 +4,19 @@
 		<v-row justify="center">
 			<v-col cols="12" sm="10">
 				<v-card class="px-3 pb-3">
-					<v-card-title class="justify-center grey--text">SAMSUNG 321</v-card-title>
+					<v-card-title class="justify-center grey--text">SAMSUNG 321<v-icon>mdi-alarm-light</v-icon></v-card-title>
 					<v-divider class="mb-5" />
+                    <v-form ref="form">
 					<div class="text-right">
-                        <v-text-field label="Agency Name" outlined></v-text-field>
-                        <v-text-field label="Agency Type" outlined></v-text-field>
-                        <v-text-field label="Agency Number" outlined></v-text-field>
-                        <v-text-field label="Agency Address" outlined></v-text-field>
-                        <v-btn class="ma-2" outlined fab color="indigo">
+                        <v-text-field label="Agency Name" clearable shaped outlined></v-text-field>
+                        <v-text-field label="Agency Type" clearable shaped outlined></v-text-field>
+                        <v-text-field label="Agency Number" clearable shaped outlined></v-text-field>
+                        <v-text-field label="Agency Address" clearable shaped outlined></v-text-field>
+                        <v-btn outlined fab color="green">
                         <v-icon>mdi-plus</v-icon>
                         </v-btn>
 					</div>
+                    </v-form>
                     <div>
                         <v-simple-table height="300px">
                         <template v-slot:default>
@@ -45,7 +47,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+    reset () {
+        this.$refs.form.reset()
+      }
+}
 </script>
 
 <style scoped>
