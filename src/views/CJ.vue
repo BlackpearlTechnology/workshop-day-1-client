@@ -37,8 +37,22 @@
                                             append-icon="mdi-alert-box"> 
                                         </v-text-field>
                                         
-                                        <v-btn @click="addDevice" class="ma-2"  elevation="4" outlined color="indigo">Outlined Button</v-btn>
- 
+                                        <v-btn @click="addDevice" class="ma-2"  elevation="4" outlined color="indigo">Add Device</v-btn>
+                                        
+                                        <v-snackbar
+                                        v-model="snackbar"
+                                        :timeout="timeout"
+                                        >
+                                        {{ text }}
+                                        <v-btn
+                                            color="blue"
+                                            text
+                                            @click="closeSnackbar"
+                                        >
+                                            Close
+                                        </v-btn>
+                                        </v-snackbar>
+
                                         </v-col>
 
                                         <v-col cols="12" sm="6">
@@ -77,6 +91,11 @@
 export default {
     data(){
         return{
+            
+            snackbar: false,
+            text: 'Device Added.',
+            timeout: 2000,
+             
             drawer: false,
             deviceId: '',
             IMEI: '',
@@ -92,11 +111,16 @@ export default {
     },
     methods: {
         addDevice() {
+            this.snackbar = true
             this.devices.push({
                 deviceid: this.deviceId,
                 imei: this.IMEI,
                 status: this.Status
             })
+        },
+
+        closeSnackbar() {
+            this.snackbar = false
         }
     }
     
