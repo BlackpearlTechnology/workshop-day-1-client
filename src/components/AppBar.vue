@@ -68,9 +68,9 @@
 				drawer: false,
 				links: [
 					{
-						name: 'Google Maps',
+						name: 'Sarah Opeña',
 						address: 'https://www.google.com/maps',
-						icon: 'mdi-google-maps'
+						icon: 'mdi-map-marker-radius'
 					},
 					{
 						name: 'Google Play',
