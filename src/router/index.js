@@ -1,11 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-<<<<<<< HEAD
 import Daun from '../views/Daun.vue'
-=======
 import CJ from '../views/CJ.vue'
->>>>>>> 36f27f1e5ceeb9c7d543ebfb1ab2883723eb8603
 
 Vue.use(VueRouter)
 
