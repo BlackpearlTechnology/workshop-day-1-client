@@ -15,7 +15,7 @@
 			<!-- Appbar links. Will be hidden on mobile view -->
 			<div class="hidden-sm-and-down">
 				<!-- Links -->
-				<v-btn text v-for="link in links" :key="link.name" :href="link.address" target="_blank">
+				<v-btn exact text v-for="link in links" :key="link.name" :to="link.address">
 					<v-icon small class="mr-1 indigo--text">{{ link.icon }}</v-icon>
 					<span class="mr-2 indigo--text">{{ link.name }}</span>
 				</v-btn>
@@ -84,7 +84,7 @@
 					},
 					{
 						name: 'Kyle Zabala',
-						address: 'https://youtube.com',
+						address: { name: 'kyle-vue' },
 						icon: 'mdi-alien'
 					},
 					{ 	name: 'CJ Corpuz', 
