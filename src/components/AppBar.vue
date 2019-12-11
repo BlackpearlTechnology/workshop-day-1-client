@@ -15,7 +15,7 @@
 			<!-- Appbar links. Will be hidden on mobile view -->
 			<div class="hidden-sm-and-down">
 				<!-- Links -->
-				<v-btn text v-for="link in links" :key="link.name" :href="link.address" target="_blank">
+				<v-btn text v-for="link in links" :key="link.name" :to="link.address" exact>
 					<v-icon small class="mr-1 indigo--text">{{ link.icon }}</v-icon>
 					<span class="mr-2 indigo--text">{{ link.name }}</span>
 				</v-btn>
@@ -68,26 +68,29 @@
 				drawer: false,
 				links: [
 					{
-						name: 'Google Maps',
+						name: 'Sarah Opeña',
 						address: 'https://www.google.com/maps',
-						icon: 'mdi-google-maps'
+						icon: 'mdi-fan mdi-spin'
 					},
 					{
-						name: 'Google Play',
-						address: 'https://play.google.com',
-						icon: 'mdi-google-play'
+						name: 'Si ✌',
+						address: 'https://www.facebook.com/srapdv',
+						icon: 'mdi-account-outline'
 					},
 					{
-						name: 'Chrome',
+						name: 'Daun Sayson',
 						address: 'https://www.google.com/chrome',
-						icon: 'mdi-google-chrome'
+						icon: 'mdi-cannabis'
 					},
 					{
-						name: 'Youtube',
+						name: 'Kyle Zabala',
 						address: 'https://youtube.com',
-						icon: 'mdi-youtube'
+						icon: 'mdi-alien'
 					},
-					{ name: 'Gmail', address: 'https://gmail.com', icon: 'mdi-gmail' }
+					{ 	name: 'CJ Corpuz', 
+						address: {name: 'cjview'}, 
+						icon: 'mdi-gog' 
+					}
 				],
 				sampleUser: {
 					name: 'Ned Stark',
