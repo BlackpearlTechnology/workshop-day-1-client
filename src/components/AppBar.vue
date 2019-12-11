@@ -15,7 +15,7 @@
 			<!-- Appbar links. Will be hidden on mobile view -->
 			<div class="hidden-sm-and-down">
 				<!-- Links -->
-				<v-btn text v-for="link in links" :key="link.name" :href="link.address" target="_blank">
+				<v-btn text v-for="link in links" :key="link.name" :to="link.address" exact="">
 					<v-icon small class="mr-1 indigo--text">{{ link.icon }}</v-icon>
 					<span class="mr-2 indigo--text">{{ link.name }}</span>
 				</v-btn>
@@ -69,7 +69,7 @@
 				links: [
 					{
 						name: 'Sarah Opeña',
-						address: 'https://www.google.com/maps',
+						address: { name: 'sarah-view'},
 						icon: 'mdi-fan mdi-spin'
 					},
 					{
