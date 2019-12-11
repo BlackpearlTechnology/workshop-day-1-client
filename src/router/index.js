@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import kyle from '../views/kyle.vue'
+import Sarah from '../views/Sarah.vue'
 import CJ from '../views/CJ.vue'
 
 Vue.use(VueRouter)
@@ -18,12 +19,17 @@ const routes = [
     component: kyle
   },
   {
+    path: '/sarah-view',
+    name: 'sarah-view',
+    component: Sarah
+  },
+  {
     path: '/cj',
     name: 'cjview',
     component: CJ
   }
-
   /* Add your routes here */
+  
 ]
 
 const router = new VueRouter({

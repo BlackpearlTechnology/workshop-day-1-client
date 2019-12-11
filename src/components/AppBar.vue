@@ -69,7 +69,7 @@
 				links: [
 					{
 						name: 'Sarah Opeña',
-						address: 'https://www.google.com/maps',
+						address: { name: 'sarah-view'},
 						icon: 'mdi-fan mdi-spin'
 					},
 					{
