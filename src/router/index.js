@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Test from '../views/Test.vue'
+import Si from '../views/Si.vue'
+import kyle from '../views/kyle.vue'
 import Daun from '../views/Daun.vue'
 import Sarah from '../views/Sarah.vue'
 import CJ from '../views/CJ.vue'
@@ -17,8 +18,13 @@ const routes = [
 
   {
     path: '/test',
-    name: 'test',
-    component: Test
+    name: 'si-view',
+    component: Si
+  },
+  {
+    path: '/kyle',
+    name: 'kyle-vue',
+    component: kyle
   },
   {
     path: '/daun-view',
