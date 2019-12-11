@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Si from '../views/Si.vue'
 import kyle from '../views/kyle.vue'
 import Daun from '../views/Daun.vue'
 import Sarah from '../views/Sarah.vue'
@@ -13,6 +14,12 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+
+  {
+    path: '/test',
+    name: 'si-view',
+    component: Si
   },
   {
     path: '/kyle',

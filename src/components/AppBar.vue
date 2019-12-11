@@ -74,7 +74,7 @@
 					},
 					{
 						name: 'Si ✌',
-						address: 'https://www.facebook.com/srapdv',
+						address: {name: 'si-view'},
 						icon: 'mdi-account-outline'
 					},
 					{
