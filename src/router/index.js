@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Daun from '../views/Daun.vue'
 import Sarah from '../views/Sarah.vue'
 import CJ from '../views/CJ.vue'
 
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: Home
+  },
+  {
+    path: '/daun-view',
+    name: 'daun-view',
+    component: Daun
   },
   {
     path: '/sarah-view',

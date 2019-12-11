@@ -79,7 +79,7 @@
 					},
 					{
 						name: 'Daun Sayson',
-						address: 'https://www.google.com/chrome',
+						address: {name: 'daun-view'},
 						icon: 'mdi-cannabis'
 					},
 					{
