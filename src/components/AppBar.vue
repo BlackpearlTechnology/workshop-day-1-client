@@ -87,7 +87,7 @@
 						address: 'https://youtube.com',
 						icon: 'mdi-youtube'
 					},
-					{ name: 'Gmail', address: 'https://gmail.com', icon: 'mdi-gmail' }
+					{ name: 'CJ Corpuz', address: 'https://gog.com', icon: 'mdi-gog' }
 				],
 				sampleUser: {
 					name: 'Ned Stark',
