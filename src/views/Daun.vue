@@ -1,12 +1,17 @@
 <template>
 
 <v-container>
-    <v-card>
-        <v-card-title class="justify-center grey--text">
-            <h1>DAUN SAYSON</h1>
-        </v-card-title>
-    </v-card>
-</v-container>
+		<v-row justify="center">
+			<v-col cols="12" sm="10">
+				<v-card class="px-3 pb-3">
+					<v-card-title class="justify-center grey--text">DAUN SAYSON</v-card-title>
+					<v-divider class="mb-5" />
+					<div>
+					</div>
+				</v-card>
+			</v-col>
+		</v-row>
+	</v-container>
   
 </template>
 
