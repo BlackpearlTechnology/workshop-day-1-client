@@ -15,6 +15,9 @@
                         <v-btn outlined fab color="green">
                         <v-icon>mdi-plus</v-icon>
                         </v-btn>
+                        <v-btn outlined fab color="error" @click="reset">
+                        <v-icon>mdi-plus</v-icon>
+                        </v-btn>
 					</div>
                     </v-form>
                     <div>
