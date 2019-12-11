@@ -15,7 +15,11 @@
 			<!-- Appbar links. Will be hidden on mobile view -->
 			<div class="hidden-sm-and-down">
 				<!-- Links -->
-				<v-btn text v-for="link in links" :key="link.name" :to="link.address" exact="">
+<<<<<<< HEAD
+				<v-btn text v-for="link in links" :key="link.name" :to="link.address" exact>
+=======
+				<v-btn text v-for="link in links" :key="link.name" :to="link.address" exact>
+>>>>>>> 36f27f1e5ceeb9c7d543ebfb1ab2883723eb8603
 					<v-icon small class="mr-1 indigo--text">{{ link.icon }}</v-icon>
 					<span class="mr-2 indigo--text">{{ link.name }}</span>
 				</v-btn>
@@ -88,7 +92,7 @@
 						icon: 'mdi-alien'
 					},
 					{ 	name: 'CJ Corpuz', 
-						address: 'https://gog.com', 
+						address: {name: 'cjview'}, 
 						icon: 'mdi-gog' 
 					}
 				],
