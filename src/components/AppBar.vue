@@ -83,9 +83,9 @@
 						icon: 'mdi-cannabis'
 					},
 					{
-						name: 'Youtube',
+						name: 'Kyle Zabala',
 						address: 'https://youtube.com',
-						icon: 'mdi-youtube'
+						icon: 'mdi-alien'
 					},
 					{ 	name: 'CJ Corpuz', 
 						address: 'https://gog.com', 
