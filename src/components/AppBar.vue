@@ -83,9 +83,9 @@
 						icon: 'mdi-google-chrome'
 					},
 					{
-						name: 'Youtube',
+						name: 'Kyle Zabala',
 						address: 'https://youtube.com',
-						icon: 'mdi-youtube'
+						icon: 'mdi-alien'
 					},
 					{ name: 'Gmail', address: 'https://gmail.com', icon: 'mdi-gmail' }
 				],
