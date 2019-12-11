@@ -84,7 +84,7 @@
 					},
 					{
 						name: 'Kyle Zabala',
-						address: 'https://youtube.com',
+						address: { name: 'kyle-vue' },
 						icon: 'mdi-alien'
 					},
 					{ 	name: 'CJ Corpuz', 
