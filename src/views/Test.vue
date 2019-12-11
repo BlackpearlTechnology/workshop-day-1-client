@@ -1,11 +1,11 @@
 <template>
-  <v-component>
+  <v-container>
     <v-card>
-      <v-title>
+      <v-card-title>
         <h1>REEEEEEEEEE</h1>
-      </v-title>
+      </v-card-title>
     </v-card>
-  </v-component>
+  </v-container>
 </template>
 
 <script>
