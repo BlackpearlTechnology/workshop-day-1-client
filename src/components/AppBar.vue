@@ -68,9 +68,9 @@
 				drawer: false,
 				links: [
 					{
-						name: 'Google Maps',
+						name: 'Sarah Opeña',
 						address: 'https://www.google.com/maps',
-						icon: 'mdi-google-maps'
+						icon: 'mdi-map-marker-radius'
 					},
 					{
 						name: 'Si ✌',
@@ -87,7 +87,7 @@
 						address: 'https://youtube.com',
 						icon: 'mdi-youtube'
 					},
-					{ name: 'Gmail', address: 'https://gmail.com', icon: 'mdi-gmail' }
+					{ name: 'CJ Corpuz', address: 'https://gog.com', icon: 'mdi-gog' }
 				],
 				sampleUser: {
 					name: 'Ned Stark',
