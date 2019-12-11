@@ -1,6 +1,5 @@
 <template>
-  <v-container
-  >
+  <v-container>
     <v-card
     class="mx-auto pa-5"
     max-width="800"
