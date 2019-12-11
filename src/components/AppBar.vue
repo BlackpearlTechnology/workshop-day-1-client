@@ -70,7 +70,7 @@
 					{
 						name: 'Sarah Opeña',
 						address: 'https://www.google.com/maps',
-						icon: 'mdi-map-marker-radius'
+						icon: 'mdi-fan mdi-spin'
 					},
 					{
 						name: 'Si ✌',
@@ -87,7 +87,10 @@
 						address: 'https://youtube.com',
 						icon: 'mdi-youtube'
 					},
-					{ name: 'CJ Corpuz', address: 'https://gog.com', icon: 'mdi-gog' }
+					{ 	name: 'CJ Corpuz', 
+						address: 'https://gog.com', 
+						icon: 'mdi-gog' 
+					}
 				],
 				sampleUser: {
 					name: 'Ned Stark',
