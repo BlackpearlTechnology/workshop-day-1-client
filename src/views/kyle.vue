@@ -26,7 +26,7 @@
 export default {
 }
 </script>
-<style>
+<style scoped>
 div.container {
   max-width: 600px;
   padding: 25px;
