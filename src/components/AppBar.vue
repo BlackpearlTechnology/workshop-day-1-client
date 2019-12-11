@@ -78,9 +78,9 @@
 						icon: 'mdi-account-outline'
 					},
 					{
-						name: 'Daun Sayson',
+						name: 'Samsung 321',
 						address: {name: 'daun-view'},
-						icon: 'mdi-cannabis'
+						icon: 'mdi-alarm-light'
 					},
 					{
 						name: 'Kyle Zabala',
