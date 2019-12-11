@@ -1,4 +1,4 @@
-import Vue from 'vue'
+﻿import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Si from '../views/Si.vue'
@@ -6,6 +6,7 @@ import kyle from '../views/kyle.vue'
 import Daun from '../views/Daun.vue'
 import Sarah from '../views/Sarah.vue'
 import CJ from '../views/CJ.vue'
+import Jeg from '../views/Jeg.vue'
 
 Vue.use(VueRouter)
 
@@ -40,9 +41,14 @@ const routes = [
     path: '/cj',
     name: 'cjview',
     component: CJ
+  },
+  {
+    path: '/jeg-view',
+    name: 'jeg-view',
+    component: Jeg
   }
   /* Add your routes here */
-  
+
 ]
 
 const router = new VueRouter({
