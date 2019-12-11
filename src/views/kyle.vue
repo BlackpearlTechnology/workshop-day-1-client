@@ -19,9 +19,23 @@
   <div class="text-center">
     <v-btn width="400px" height="50px" rounded color="success" dark>REGISTER</v-btn>
   </div>    
+  <br>
+ <v-simple-table dark>
+    <template v-slot:default>
+      <thead>
+        <tr>
+          <th class="text-center">ISSUE</th>
+          <th class="text-center">TYPE</th>
+          <th class="text-center">DESCRIPTION</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </template>
+  </v-simple-table>
   </div>
 </template>
-
 <script>
 export default {
 }
