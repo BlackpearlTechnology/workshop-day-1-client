@@ -78,9 +78,9 @@
 						icon: 'mdi-account-outline'
 					},
 					{
-						name: 'Chrome',
+						name: 'Daun Sayson',
 						address: 'https://www.google.com/chrome',
-						icon: 'mdi-google-chrome'
+						icon: 'mdi-cannabis'
 					},
 					{
 						name: 'Kyle Zabala',
