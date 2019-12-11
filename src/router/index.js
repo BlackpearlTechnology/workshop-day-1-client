@@ -13,15 +13,14 @@ const routes = [
     component: Home
   },
   {
-<<<<<<< HEAD
     path: '/daun-view',
     name: 'daun-view',
     component: Daun
-=======
+  },
+  {
     path: '/cj',
     name: 'cjview',
     component: CJ
->>>>>>> 36f27f1e5ceeb9c7d543ebfb1ab2883723eb8603
   }
 
   /* Add your routes here */
