@@ -69,7 +69,7 @@
 				links: [
 					{
 						name: 'Sarah Opeña',
-						address: 'https://www.google.com/maps',
+						address: { name: 'sarah-view'},
 						icon: 'mdi-fan mdi-spin'
 					},
 					{
@@ -79,7 +79,7 @@
 					},
 					{
 						name: 'Daun Sayson',
-						address: 'https://www.google.com/chrome',
+						address: {name: 'daun-view'},
 						icon: 'mdi-cannabis'
 					},
 					{
