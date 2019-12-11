@@ -17,7 +17,7 @@ const routes = [
   },
 
   {
-    path: '/test',
+    path: '/si',
     name: 'si-view',
     component: Si
   },
