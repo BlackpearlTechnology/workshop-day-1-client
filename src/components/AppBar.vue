@@ -68,18 +68,23 @@
 				drawer: false,
 				links: [
 					{
+						name: 'Jeg Ramos',
+						address: { name: 'jeg-view' },
+						icon: 'mdi-pokeball mdi-spin'
+					},
+					{
 						name: 'Sarah Opeña',
-						address: { name: 'sarah-view'},
+						address: { name: 'sarah-view' },
 						icon: 'mdi-fan mdi-spin'
 					},
 					{
 						name: 'Si ✌',
-						address: {name: 'si-view'},
+						address: { name: 'si-view' },
 						icon: 'mdi-account-outline'
 					},
 					{
 						name: 'Daun Sayson',
-						address: {name: 'daun-view'},
+						address: { name: 'daun-view' },
 						icon: 'mdi-alarm-light'
 					},
 					{
@@ -87,10 +92,7 @@
 						address: { name: 'kyle-vue' },
 						icon: 'mdi-alien'
 					},
-					{ 	name: 'CJ Corpuz', 
-						address: {name: 'cjview'}, 
-						icon: 'mdi-gog' 
-					}
+					{ name: 'CJ Corpuz', address: { name: 'cjview' }, icon: 'mdi-gog' }
 				],
 				sampleUser: {
 					name: 'Ned Stark',
