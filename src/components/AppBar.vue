@@ -80,7 +80,7 @@
 					{
 						name: 'Daun Sayson',
 						address: {name: 'daun-view'},
-						icon: 'mdi-alarm-light'
+						icon: 'mdi-orbit mdi-spin'
 					},
 					{
 						name: 'Kyle Zabala',

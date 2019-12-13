@@ -4,7 +4,7 @@
 		<v-row justify="center">
 			<v-col cols="12" sm="10">
 				<v-card class="px-3 pb-3">
-					<v-card-title class="justify-center grey--text">SAMSUNG 321<v-icon>mdi-alarm-light</v-icon></v-card-title>
+					<v-card-title class="justify-center grey--text">SAMSUNG 321<v-icon class="icon-bg">mdi-alarm-light</v-icon></v-card-title>
 					<v-divider class="mb-5" />
                     <v-form ref="form">
 					<div class="text-right">
@@ -20,6 +20,7 @@
                         </v-btn>
 					</div>
                     </v-form>
+
                     <div>
                         <v-simple-table height="300px">
                         <template v-slot:default>
@@ -86,4 +87,7 @@ export default {
 
 <style scoped>
  
+  .icon-bg {
+      background:linear-gradient(135deg, #3425af 0%,#A1051D 100%);
+  }
 </style>
