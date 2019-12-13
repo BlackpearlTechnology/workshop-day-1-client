@@ -84,13 +84,8 @@
 					},
 					{
 						name: 'Daun Sayson',
-<<<<<<< HEAD
 						address: {name: 'daun-view'},
 						icon: 'mdi-orbit mdi-spin'
-=======
-						address: { name: 'daun-view' },
-						icon: 'mdi-alarm-light'
->>>>>>> 7f01e7545f7b17c26b63be26e2a2862332d7bb8b
 					},
 					{
 						name: 'Kyle Zabala',
