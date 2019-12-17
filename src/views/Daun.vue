@@ -3,11 +3,41 @@
     <v-row justify="center">
       <v-col cols="12" sm="10">
         <v-card class="px-3 pb-3">
-          <v-card-title class="justify-center grey--text">
+          <div class="text-right">
+            <v-dialog v-model="dialog" width="600px">
+              <template v-slot:activator="{ on }">
+                <v-btn color="primary" fab x-small v-on="on" class="btn" outlined>
+                  <v-icon>mdi-information-outline</v-icon>
+                </v-btn>
+              </template>
+              <v-card class="text-right">
+                <v-card-title>
+                  <span class="headline">About Samsung321</span>
+                </v-card-title>
+                <v-divider class="mb-5" />
+                <v-card-text class="text-left">
+                  Samsung Philippines introduces Samsung 321 - an app designed to give information on the nearest emergency services (within a 5km radius) based on the user's location by dialing 321 on your device, may be then online/offline.
+                  <br />
+                  <br />This app allows the users to contact emergency services using their handset*, and also shows the location and contact information of the nearest Samsung mobile phone service and appliance center. (Service available in the Philippines only)
+                  <br />
+                  <br />*Telco charges will apply.
+                  <br />
+                  <br />[Help us update our information]
+                  New or updated contact can be submitted to srph.se@samsung.com
+                </v-card-text>
+                <v-btn class="btn" color="red" fab outlined x-small @click="dialog = false">
+                  <v-icon>mdi-close</v-icon>
+                </v-btn>
+              </v-card>
+            </v-dialog>
+          </div>
+
+          <v-card-title class="justify-center">
             SAMSUNG 321
             <v-icon class="icon-bg">mdi-alarm-light</v-icon>
           </v-card-title>
           <v-divider class="mb-5" />
+
           <v-form ref="form">
             <div class="text-right">
               <v-text-field
@@ -35,6 +65,7 @@
                 prepend-inner-icon="mdi-map-outline"
                 clearable
               ></v-text-field>
+
               <v-btn @click="addAgency" class="btn" outlined fab color="green">
                 <v-icon>mdi-plus</v-icon>
               </v-btn>
@@ -43,7 +74,6 @@
                 <v-icon>mdi-notification-clear-all</v-icon>
               </v-btn>
               <v-snackbar v-model="snackbar1" color="orange" :timeout="timeout1">{{ text1 }}</v-snackbar>
-              <br />
             </div>
           </v-form>
           <v-card>
@@ -65,20 +95,28 @@
     </v-row>
   </v-container>
 </template>
-
 <script>
 export default {
   data() {
     return {
+      dialog: false,
+
       snackbar: false,
       text: "Agency Added.",
-      timeout: 2000,
+      timeout: 1500,
 
       snackbar1: false,
       text1: "Fields Cleared.",
-      timeout1: 2000,
+      timeout1: 1500,
 
-      agencyTypes: ["Police Station", "Hospital", "Fire Station"],
+      agencyTypes: [
+        "Police Stations",
+        "Medical Assistance",
+        "Fire Stations",
+        "Natural Disaster Hotlines",
+        "Red Cross",
+        "Motor and Traffic Assistance"
+      ],
 
       search: "",
       headers: [
@@ -118,6 +156,7 @@ export default {
       ]
     };
   },
+
   methods: {
     addAgency() {
       this.agencies.push({
