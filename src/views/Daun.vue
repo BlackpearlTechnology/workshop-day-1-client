@@ -6,7 +6,14 @@
           <div class="text-right">
             <v-dialog v-model="dialog" width="600px">
               <template v-slot:activator="{ on }">
-                <v-btn color="primary" fab x-small v-on="on" class="btn" outlined>
+                <v-btn
+                  color="primary"
+                  fab
+                  x-small
+                  v-on="on"
+                  class="btn"
+                  outlined
+                >
                   <v-icon>mdi-information-outline</v-icon>
                 </v-btn>
               </template>
@@ -16,16 +23,29 @@
                 </v-card-title>
                 <v-divider class="mb-5" />
                 <v-card-text class="text-left">
-                  Samsung Philippines introduces Samsung 321 - an app designed to give information on the nearest emergency services (within a 5km radius) based on the user's location by dialing 321 on your device, may be then online/offline.
+                  Samsung Philippines introduces Samsung 321 - an app designed
+                  to give information on the nearest emergency services (within
+                  a 5km radius) based on the user's location by dialing 321 on
+                  your device, may be then online/offline.
                   <br />
-                  <br />This app allows the users to contact emergency services using their handset*, and also shows the location and contact information of the nearest Samsung mobile phone service and appliance center. (Service available in the Philippines only)
+                  <br />This app allows the users to contact emergency services
+                  using their handset*, and also shows the location and contact
+                  information of the nearest Samsung mobile phone service and
+                  appliance center. (Service available in the Philippines only)
                   <br />
                   <br />*Telco charges will apply.
                   <br />
-                  <br />[Help us update our information]
-                  New or updated contact can be submitted to srph.se@samsung.com
+                  <br />[Help us update our information] New or updated contact
+                  can be submitted to srph.se@samsung.com
                 </v-card-text>
-                <v-btn class="btn" color="red" fab outlined x-small @click="dialog = false">
+                <v-btn
+                  class="btn"
+                  color="red"
+                  fab
+                  outlined
+                  x-small
+                  @click="dialog = false"
+                >
                   <v-icon>mdi-close</v-icon>
                 </v-btn>
               </v-card>
@@ -69,11 +89,18 @@
               <v-btn @click="addAgency" class="btn" outlined fab color="green">
                 <v-icon>mdi-plus</v-icon>
               </v-btn>
-              <v-snackbar v-model="snackbar" color="green" :timeout="timeout">{{ text }}</v-snackbar>
+              <v-snackbar v-model="snackbar" color="green" :timeout="timeout">{{
+                text
+              }}</v-snackbar>
               <v-btn outlined fab class="btn" color="warning" @click="reset">
                 <v-icon>mdi-notification-clear-all</v-icon>
               </v-btn>
-              <v-snackbar v-model="snackbar1" color="orange" :timeout="timeout1">{{ text1 }}</v-snackbar>
+              <v-snackbar
+                v-model="snackbar1"
+                color="orange"
+                :timeout="timeout1"
+                >{{ text1 }}</v-snackbar
+              >
             </div>
           </v-form>
           <v-card>
@@ -88,7 +115,11 @@
                 hide-details
               ></v-text-field>
             </v-card-title>
-            <v-data-table :headers="headers" :items="agencies" :search="search"></v-data-table>
+            <v-data-table
+              :headers="headers"
+              :items="agencies"
+              :search="search"
+            ></v-data-table>
           </v-card>
         </v-card>
       </v-col>
